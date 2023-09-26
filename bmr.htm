@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMR</title>
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--Main css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Fontawesome css file-->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+<body>
+  <!--Start navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="index.htm"><span id="ttl">Work</span>out</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.htm">Home</a>
+          <a class="nav-link" href="signin.htm">Sign in</a>
+          
+          <a class="nav-link" href="bmr.htm">BMR</a>
+          <a class="nav-link" href="location.htm">Location</a>
+          <a class="nav-link" href="contact.htm">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--end navbar-->
+ 
+  <!-- Start section BMR -->
+  <div class="container">
+    <h2 class="text-white mt-4 text-center">Calculate your BMR</h2>
+    <div class="d-flex justify-content-center align-items-center flex-column">
+      <div class="input-group mt-5 w-50">
+        <span class="input-group-text" id="basic-addon1">Age</span>
+        <input type="text" class="form-control" placeholder="Your age" id="ageInput" aria-label="age" aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mt-3 w-50">
+        <span class="input-group-text" id="basic-addon2">Height (cm)</span>
+        <input type="text" class="form-control" placeholder="Your height" id="heightInput" aria-label="height" aria-describedby="basic-addon2">
+      </div>
+
+      <div class="input-group mt-3 w-50">
+        <span class="input-group-text" id="basic-addon3">Weight (kg)</span>
+        <input type="text" class="form-control" placeholder="Your weight" id="weightInput" aria-label="weight" aria-describedby="basic-addon3">
+      </div>
+
+      <div class="form-check mt-3">
+        <label class="form-check-label text-white">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="550">
+          Training 3-4 days a week
+        </label>
+      </div>
+      <div class="form-check mt-2">
+        <label class="form-check-label text-white">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="1100">
+          Training 5-6 days a week
+        </label>
+      </div>
+
+      <!-- Choose your goal input fields -->
+      <div class="mt-3">
+        <label class="form-label text-white">Choose your goal:</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="goalRadio" id="lose550" value="550">
+          <label class="form-check-label text-white" for="lose550">Lose 550 calories per week<code>(0.1kg)</code></label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="goalRadio" id="lose1100" value="1100">
+          <label class="form-check-label text-white" for="lose1100">Lose 1100 calories per week<code>(1kg)</code></label>
+        </div>
+      </div>
+      <input type="button" class="btn btn-primary mt-3" value="Calculate" id="calculateButton">
+       <!-- Add a Reset button -->
+      <input type="button" class="btn btn-danger mt-3 px-4" value="Reset" id="resetButton">
+      <!--result-->
+      <input type="text" class="form-control w-50 mt-3" placeholder="Your result" id="resultField" disabled>
+    </div>
+  </div>
+  <!-- End section BMR -->
+     <!--footer-->
+     <div class="footer pt-5 pb-5 text-white-50 text-center text-md-start">
+      <div class="container brd">
+        <div class="row">
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">Links</h5>
+              <ul class="list-unstyled lh-lg">
+                <li><a href="index.htm" class="nav-link">Home</a></li>
+                <li><a href="index.htm" class="nav-link">Support</a></li>
+                <li><a href="index.htm" class="nav-link">Terms and condition</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="links">
+              <h5 class="text-light">About us</h5>
+              <ul class="list-unstyled lh-lg">
+                <li><a href="#" class="nav-link">Sign in</a></li>
+                <li><a href="location.htm" class="nav-link">Location</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="contact">
+              <h5 class="text-light">Contact us</h5>
+              <p class="lh-lg mt-3 mb-5">Get in touch with us via email phone.<br>we are waiting for you call.</p>
+              <ul class="d-flex mt-5 list-unstyled gap-2 ">
+                <li><a class="d-block text-light"href="#">
+                  <li class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></li>
+                </a></li>
+                <li><a class="d-block text-light"href="#">
+                  <li class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></li>
+                </a></li>
+                <li><a class="d-block text-light"href="#">
+                  <li class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></li>
+                </a></li>
+                <li><a class="d-block text-light"href="#">
+                  <li class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></li>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end footer-->
+  <!--jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap Js file -->
+  <script src="Js/bootstrap.bundle.min.js"></script>
+  <!-- Fontawesome-Js file -->
+  <script src="Js/all.min.js"></script>
+  <!--BMR js file-->
+  <script src="js/bmr.js"></script>
+</body>
+</html>
