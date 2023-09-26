@@ -15,6 +15,9 @@ body{
 }
 /*End customize link */
 /*Navbar*/
+#ttl{
+    color: rgb(235, 137, 104);
+}
 .navbar-brand{
     text-transform: uppercase;
     font-weight: bold;
@@ -46,26 +49,34 @@ body{
 }
 /*End navbar*/
 /*Header*/
-.BtnHea{
-    position: absolute;
-    margin-top:-250px;
+.mbr-section-title{
+    font-size: 45px;
+}
+.mbr-section-btn .btn{
+    width:120px;
+    height: 55px;
+    padding: 14px;
+    background-color: rgb(235, 137, 104);
+    border: none;
+}
+.mbr-section-btn .btn:hover{
+    background-color: rgba(235, 137, 104, 0.32);
+}
+@media (min-width: 992px){
+.col-lg {
+    align-self: center;
+}.mbr-section-btn{
+    text-align: center;
+}.mbr-section-title{
+    text-align: center;
+}.mbr-sec{
+    border: 5px dotted rgb(110, 50, 197);
+    padding: 10px;
+    border-radius: 10px;
     margin-left: 20px;
-    text-decoration: none;
-    color:white;
-    background-color: rgb(122, 53, 217);
-    padding:5px 15px;
-    border-radius: 20px;
-    font-size: 25px;
 }
-.BtnHea:hover{
-    background-color:rgba(121, 53, 217, 0.579);
 }
-.PrgHea{
-    margin-top:-150px;
-    font-size: 10px;
-    margin-bottom: 100px;
-}
-    /*end header*/
+ /*end header*/
 
 /*Start section 1*/
 .container .row .secOne{
@@ -73,7 +84,7 @@ body{
     height:220px;
 }
 .container .row  .secOne:hover{
-    box-shadow: rgb(203, 207, 231) 0px 0px 0px 4px;
+    box-shadow: rgb(235, 137, 104) 0px 0px 0px 4px;
     transition: all 0.3s ease-in-out 0s;
 }
 /*End section 1*/
